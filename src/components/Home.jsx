@@ -15,7 +15,7 @@ class Home extends Component {
           <div className="banner-text">
             <h1 className="responsive-headline">{data.name}</h1>
             <h3>
-              <b className="subtitulo-header">- {data.ocupacion} -</b>
+              <b className="subtitulo-header">&lt;{data.ocupacion} /&gt;</b>
             </h3>
             <hr />
           </div>

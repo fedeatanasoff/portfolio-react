@@ -158,11 +158,6 @@ pre {
   word-wrap: break-word;
 }
 
-blockquote,
-q {
-  quotes: &#8220 &#8220;
-}
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -282,8 +277,9 @@ h6 {
   font-size: 14px;
   line-height: 30px;
 }
-.subheader {
-}
+/* .subheader {
+  font: 14px/18px "opensans-bold", sans-serif;
+} */
 
 p {
   margin: 0 0 30px 0;
@@ -427,7 +423,7 @@ a,
 a:visited {
   text-decoration: none;
   outline: 0;
-  color: #11abb0;
+  color: #cc005f;
 
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
@@ -487,10 +483,10 @@ li {
   line-height: 18px;
   margin-bottom: 12px;
 }
-ul.large li {
+/* ul.large li {
 }
 li p {
-}
+} */
 
 /* ---------------------------------------------------------------------
 /*  Stats Tab Markup
@@ -525,7 +521,7 @@ li p {
   color: #313131;
 }
 .stats-tabs li a:hover {
-  color: #11abb0;
+  color: #cc005f;
 }
 .stats-tabs li a b {
   display: block;
@@ -541,7 +537,7 @@ dl {
 }
 dt {
   margin: 0;
-  color: #11abb0;
+  color: #cc005f;
 }
 dd {
   margin: 0 0 0 20px;
@@ -619,7 +615,7 @@ dd {
 }
 .pagination .current,
 .pagination .current:hover {
-  background-color: #11abb0;
+  background-color: #cc005f;
   color: #fff;
 }
 .pagination .inactive,
@@ -627,9 +623,9 @@ dd {
   background-color: #e6e8eb;
   color: #a9adb2;
 }
-.pagination .prev,
+/* .pagination .prev,
 .pagination .next {
-}
+} */
 
 /*  5. Images  --------------------------------------------------------- */
 
@@ -653,7 +649,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   font: 16px/30px "opensans-bold", sans-serif;
-  background: #11abb0;
+  background: #cc005f;
   display: inline-block;
   text-decoration: none;
   letter-spacing: 0;
@@ -731,7 +727,7 @@ select {
   margin: 0 0 24px 0;
   border: 0;
   outline: none;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   min-width: 225px;
   max-width: 100%;
   font-size: 15px;
@@ -1067,9 +1063,9 @@ properly.
   [class*="column"] + [class*="column"]:last-child {
     float: none;
   }
-  [class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
-    float: none;
-  }
+  /* [class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
+     float: none; 
+  } */
 
   /* Offsets */
   .row .offset-1 {

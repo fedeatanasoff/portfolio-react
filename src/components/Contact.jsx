@@ -12,7 +12,7 @@ class Contact extends Component {
           </div> */}
 
           <div className="twelve columns">
-            <h1>contacto</h1>
+            <h1 className="h1-titulo">contacto</h1>
             <p className="">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -28,12 +28,11 @@ class Contact extends Component {
             <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset>
                 <div>
-                  <label>
-                    Name <span className="required">*</span>
+                  <label htmlFor="contactName">
+                    Nombre <span className="required">*</span>
                   </label>
                   <input
                     type="text"
-                    value=""
                     size="35"
                     id="contactName"
                     name="contactName"
@@ -46,7 +45,6 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    value=""
                     size="35"
                     id="contactEmail"
                     name="contactEmail"
@@ -54,10 +52,9 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <label>Subject</label>
+                  <label>Asunto</label>
                   <input
                     type="text"
-                    value=""
                     size="35"
                     id="contactSubject"
                     name="contactSubject"
@@ -66,7 +63,7 @@ class Contact extends Component {
 
                 <div>
                   <label>
-                    Message <span className="required">*</span>
+                    Mensaje <span className="required">*</span>
                   </label>
                   <textarea
                     cols="50"
@@ -77,7 +74,7 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <button className="submit">Submit</button>
+                  <button className="submit">Enviar</button>
                   <span id="image-loader">
                     <img alt="" src="images/loader.gif" />
                   </span>

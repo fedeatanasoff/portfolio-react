@@ -74,12 +74,12 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Reddo",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "title": "Reddo Traducciones",
+        "description": "Diseño y personalizacion de template elegido por el cliente.",
         "category": "Diseño Web",
         "tags": "Wordpress, PHP, Bootstrap",
-        "image": "coffee.jpg",
-        "url": "http://port1.com",
+        "imagen": "reddopng",
+        "url": "http://www.reddo.com.ar/",
         "modal": "#modal-01"
       }
     ]

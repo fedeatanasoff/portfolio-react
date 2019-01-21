@@ -29,7 +29,7 @@ class App extends Component {
         <Navbar />
         <Home data={this.state.dataJson.main} />
         <About data={this.state.dataJson.main} />
-        <Portfolio />
+        <Portfolio data={this.state.dataJson.portfolio} />
         <Contact />
         <Footer />
         <Preloader />

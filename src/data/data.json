@@ -74,13 +74,40 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Reddo",
+        "title": "Reddo Traducciones",
         "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
         "category": "Diseño Web",
         "tags": "Wordpress, PHP, Bootstrap",
-        "image": "coffee.jpg",
-        "url": "http://port1.com",
-        "modal": "#modal-01"
+        "image": "reddo.png",
+        "url": "http://reddo.com.ar",
+        "modal": "modal-01"
+      },
+      {
+        "title": "Rockordie Photos",
+        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "category": "Diseño Web",
+        "tags": "Angular, Firebase",
+        "image": "soon.jpg",
+        "url": "",
+        "modal": "modal-02"
+      },
+      {
+        "title": "Astronomy Picture of The Day",
+        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "category": "Diseño Web",
+        "tags": "Angular, API Nasa, Bulma CSS",
+        "image": "soon.jpg",
+        "url": "",
+        "modal": "modal-03"
+      },
+      {
+        "title": "Qwerty Pc Repair",
+        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "category": "Diseño Web",
+        "tags": "Node.js, Ejs, Bootstrap",
+        "image": "soon.jpg",
+        "url": "",
+        "modal": "modal-04"
       }
     ]
   }

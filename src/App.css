@@ -1,12 +1,67 @@
 .subtitulo-header {
   color: #cc005f;
+  font: 30px/30px "opensans-bold", sans-serif;
 }
 
 .social-icon {
   padding: 15px;
-  color: #525252;
+}
+
+.icon-skill {
+  padding: 15px 15px 15px 0;
+}
+
+.skills-icons {
+  margin: 48px 0;
 }
 
 .social-icon:hover {
   color: #cc005f;
+}
+
+.titulo-sec {
+  text-align: center;
+}
+
+.h1-titulo {
+  font: 18px/24px "opensans-semibold", sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 3px !important;
+
+  margin-bottom: 48px !important;
+  color: #cc005f !important;
+}
+
+.titulo-skill {
+  color: #fff !important;
+  margin-bottom: 24px !important;
+}
+
+#about .download {
+  padding: 0;
+  margin: 0;
+}
+
+.cat-modal {
+  letter-spacing: 0;
+  font: 12px/30px "opensans-bold", sans-serif;
+}
+
+.coming-project {
+  left: 0 !important;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+  padding: 18px 20px !important;
+  color: #fff !important;
+  background: #373233 !important;
+  margin-bottom: 42px !important;
+  border: 0 !important;
+  outline: none !important;
+  font: 14px/14px "opensans-bold", sans-serif;
+  line-height: 24px !important;
+  width: 65% !important;
+  z-index: 1110 !important;
 }
