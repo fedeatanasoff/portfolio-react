@@ -1,0 +1,12 @@
+.subtitulo-header {
+  color: #cc005f;
+}
+
+.social-icon {
+  padding: 15px;
+  color: #525252;
+}
+
+.social-icon:hover {
+  color: #cc005f;
+}

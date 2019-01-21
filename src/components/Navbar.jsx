@@ -14,24 +14,24 @@ class Navbar extends Component {
         <ul id="nav" className="nav">
           <li className="current">
             <a className="smoothscroll" href="#home">
-              Home
+              Inicio
             </a>
           </li>
           <li>
             <a className="smoothscroll" href="#about">
-              About
+              Sobre mi
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#portfolio">
-              Works
+              Portfolio
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#contact">
-              Contact
+              Contacto
             </a>
           </li>
         </ul>

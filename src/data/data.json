@@ -1,0 +1,87 @@
+{
+  "main": {
+    "name": "Fede Atanasoff",
+    "ocupacion": "Frontend",
+    "image": "fede-cv.jpg",
+    "bio": "Sed ut perspiciatis unde omnis consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+    "email": "fede.atanasoff@gmail.com",
+    "address": {
+      "city": "Moreno",
+      "state": "Buenos Aires"
+    },
+    "skills": [
+      {
+        "name": "HTML5",
+        "className": "fab fa-html5 fa-2x"
+      },
+      {
+        "name": "CSS3",
+        "className": "fab fa-css3-alt fa-2x"
+      },
+      {
+        "name": "Javascript",
+        "className": "fab fa-js-square fa-2x"
+      },
+      {
+        "name": "Node js",
+        "className": "fab fa-node fa-2x"
+      },
+      {
+        "name": "Angular",
+        "className": "fab fa-angular fa-2x"
+      },
+      {
+        "name": "React js",
+        "className": "fab fa-react fa-2x"
+      },
+      {
+        "name": "Base de Datos",
+        "className": "fas fa-database fa-2x"
+      },
+      {
+        "name": "Java",
+        "className": "fab fa-java fa-2x"
+      },
+      {
+        "name": "PHP",
+        "className": "fab fa-php fa-2x"
+      },
+      {
+        "name": "Wordpress",
+        "className": "fab fa-wordpress fa-2x"
+      }
+    ],
+
+    "cv": "http://something.com",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/fede-atanasoff",
+        "className": "fab fa-linkedin fa-2x"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com",
+        "className": "fab fa-github-square fa-2x"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/fedeatanasoff",
+        "className": "fab fa-instagram fa-2x"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Reddo",
+        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "category": "Diseño Web",
+        "tags": "Wordpress, PHP, Bootstrap",
+        "image": "coffee.jpg",
+        "url": "http://port1.com",
+        "modal": "#modal-01"
+      }
+    ]
+  }
+}

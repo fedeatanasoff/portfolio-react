@@ -5,14 +5,15 @@ class Contact extends Component {
     return (
       <section id="contact">
         <div className="row section-head">
-          <div className="two columns header-col">
+          {/* <div className="two columns header-col">
             <h1>
-              <span>Get In Touch.</span>
+              <span>nada</span>
             </h1>
-          </div>
+          </div> */}
 
-          <div className="ten columns">
-            <p className="lead">
+          <div className="twelve columns">
+            <h1>contacto</h1>
+            <p className="">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -23,11 +24,11 @@ class Contact extends Component {
         </div>
 
         <div className="row">
-          <div className="eight columns">
+          <div className="twelve columns">
             <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset>
                 <div>
-                  <label for="contactName">
+                  <label>
                     Name <span className="required">*</span>
                   </label>
                   <input
@@ -40,7 +41,7 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <label for="contactEmail">
+                  <label>
                     Email <span className="required">*</span>
                   </label>
                   <input
@@ -53,7 +54,7 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <label for="contactSubject">Subject</label>
+                  <label>Subject</label>
                   <input
                     type="text"
                     value=""
@@ -61,11 +62,10 @@ class Contact extends Component {
                     id="contactSubject"
                     name="contactSubject"
                   />
-                  >
                 </div>
 
                 <div>
-                  <label for="contactMessage">
+                  <label>
                     Message <span className="required">*</span>
                   </label>
                   <textarea
@@ -94,7 +94,7 @@ class Contact extends Component {
             </div>
           </div>
 
-          <aside className="four columns footer-widgets">
+          {/* <aside className="four columns footer-widgets">
             <div className="widget widget_contact">
               <h4>Address and Phone</h4>
               <p className="address">
@@ -136,7 +136,7 @@ class Contact extends Component {
                 </li>
               </ul>
             </div>
-          </aside>
+          </aside> */}
         </div>
       </section>
     );
