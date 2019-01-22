@@ -1,58 +1,37 @@
 import React, { Component } from "react";
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      social: this.props.data,
+      year: new Date().getFullYear()
+    };
+  }
+
   render() {
+    console.log("footer =>", this.props.data);
+    let data = this.state.social;
     return (
       <footer>
         <div className="row">
-          <div className="twelve columns">
-            <ul className="social-links">
-              <li>
-                <a href="#">
-                  <i className="fa fa-facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-google-plus" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-linkedin" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-instagram" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-dribbble" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-skype" />
-                </a>
-              </li>
-            </ul>
+          <div className="social-footer">
+            {data.map((icono, index) => {
+              return (
+                <a
+                  href={icono.url}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // const dataJson = "https://rockordie-photos.firebaseio.com/portfolio.json";
 
-            <ul className="copyright">
-              <li>&copy; Copyright 2014 CeeVee</li>
-              <li>
-                Design by{" "}
-                <a title="Styleshout" href="http://www.styleshout.com/">
-                  Styleshout
+                  className="social-icon"
+                >
+                  <i className={icono.className} />
                 </a>
-              </li>
-            </ul>
+              );
+            })}
           </div>
 
           <div id="go-top">
@@ -60,6 +39,20 @@ class Footer extends Component {
               <i className="icon-up-open" />
             </a>
           </div>
+        </div>
+        <div className="row">
+          <div className="footer-copy">
+            <span>&copy; Copyright {this.state.year} </span>
+            <span className="icon-code">
+              <i className="fas fa-code" />
+            </span>
+            <span> Federico Atanasoff</span>
+          </div>
+
+          {/* <ul className="copyright">
+            <li>&copy; Copyright {this.state.year} </li>
+            <li>Federico Atanasoff</li>
+          </ul> */}
         </div>
       </footer>
     );

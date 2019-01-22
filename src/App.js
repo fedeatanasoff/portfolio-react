@@ -29,7 +29,7 @@ class App extends Component {
         <About data={this.state.dataJson.main} />
         <Portfolio data={this.state.dataJson.portfolio} />
         <Contact />
-        <Footer />
+        <Footer data={this.state.dataJson.main.social} />
         <Preloader />
       </div>
     );

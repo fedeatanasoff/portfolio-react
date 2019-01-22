@@ -7,6 +7,10 @@
   padding: 15px;
 }
 
+.social-footer {
+  margin: 24px auto;
+}
+
 .icon-skill {
   padding: 15px 15px 15px 0;
 }
@@ -64,4 +68,9 @@
   line-height: 24px !important;
   width: 65%;
   z-index: 1110 !important;
+}
+
+.icon-code {
+  color: #cc005f;
+  /* font-size: 12px; */
 }
