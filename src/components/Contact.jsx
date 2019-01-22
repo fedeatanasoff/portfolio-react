@@ -1,7 +1,44 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      nombre: "",
+      email: "",
+      asunto: "",
+      mensaje: "",
+      respuestaForm: ""
+    };
+  }
+
+  handleForm = e => {
+    axios
+      .post("https://formcarry.com/s/97jxwL-7kNns", this.state, {
+        headers: { Accept: "application/json" }
+      })
+      .then(response => {
+        console.log(response);
+        this.setState({ respuestaForm: response });
+      })
+      .catch(error => {
+        console.log("error =>", error);
+        this.setState({ respuestaForm: error });
+      });
+
+    e.preventDefault();
+  };
+
+  handleFields = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render() {
+    console.log("respuesta form =>", this.state.respuestaForm);
     return (
       <section id="contact">
         <div className="row section-head">
@@ -25,115 +62,84 @@ class Contact extends Component {
 
         <div className="row">
           <div className="twelve columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
-              <fieldset>
-                <div>
-                  <label htmlFor="contactName">
-                    Nombre <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    size="35"
-                    id="contactName"
-                    name="contactName"
-                  />
-                </div>
+            {this.state.respuestaForm.status === 200 ? (
+              <div id="message-success">
+                <i className="fa fa-check" />
+                Tu mensaje ha sido enviado!
+                <br />
+              </div>
+            ) : (
+              <form onSubmit={this.handleForm}>
+                <fieldset>
+                  <div>
+                    <label htmlFor="nombre">
+                      Nombre <span className="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      size="35"
+                      id="contactName"
+                      name="nombre"
+                      onChange={this.handleFields}
+                    />
+                  </div>
 
-                <div>
-                  <label>
-                    Email <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    size="35"
-                    id="contactEmail"
-                    name="contactEmail"
-                  />
-                </div>
+                  <div>
+                    <label htmlFor="email">
+                      Email <span className="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      size="35"
+                      id="contactEmail"
+                      name="email"
+                      onChange={this.handleFields}
+                    />
+                  </div>
 
-                <div>
-                  <label>Asunto</label>
-                  <input
-                    type="text"
-                    size="35"
-                    id="contactSubject"
-                    name="contactSubject"
-                  />
-                </div>
+                  <div>
+                    <label htmlFor="asunto">Asunto</label>
+                    <input
+                      type="text"
+                      size="35"
+                      id="contactSubject"
+                      name="asunto"
+                      onChange={this.handleFields}
+                    />
+                  </div>
 
-                <div>
-                  <label>
-                    Mensaje <span className="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  />
-                </div>
+                  <div>
+                    <label htmlFor="mensaje">
+                      Mensaje <span className="required">*</span>
+                    </label>
+                    <textarea
+                      cols="50"
+                      rows="15"
+                      id="contactMessage"
+                      name="mensaje"
+                      onChange={this.handleFields}
+                    />
+                  </div>
 
-                <div>
-                  <button className="submit">Enviar</button>
-                  <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
-                  </span>
-                </div>
-              </fieldset>
-            </form>
+                  <div>
+                    <button className="submit">Enviar</button>
+                    <span id="image-loader">
+                      <img alt="" src="images/loader.gif" />
+                    </span>
+                  </div>
+                </fieldset>
+              </form>
+            )}
 
-            <div id="message-warning"> Error boy</div>
-
-            <div id="message-success">
-              <i className="fa fa-check" />
-              Your message was sent, thank you!
-              <br />
-            </div>
+            {this.state.respuestaForm !== "" &&
+            this.state.respuestaForm.status !== 200 ? (
+              <div id="message-warning">
+                <i className="fas fa-times" /> Hubo un error. Intente nuevamente
+              </div>
+            ) : (
+              ""
+            )}
           </div>
-
-          {/* <aside className="four columns footer-widgets">
-            <div className="widget widget_contact">
-              <h4>Address and Phone</h4>
-              <p className="address">
-                Jonathan Doe
-                <br />
-                1600 Amphitheatre Parkway <br />
-                Mountain View, CA 94043 US
-                <br />
-                <span>(123) 456-7890</span>
-              </p>
-            </div>
-
-            <div className="widget widget_tweets">
-              <h4 className="widget-title">Latest Tweets</h4>
-
-              <ul id="twitter">
-                <li>
-                  <span>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                    quis bibendum auctor, nisi elit consequat ipsum
-                    <a href="#">http://t.co/CGIrdxIlI3</a>
-                  </span>
-                  <b>
-                    <a href="#">2 Days Ago</a>
-                  </b>
-                </li>
-                <li>
-                  <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi
-                    <a href="#">http://t.co/CGIrdxIlI3</a>
-                  </span>
-                  <b>
-                    <a href="#">3 Days Ago</a>
-                  </b>
-                </li>
-              </ul>
-            </div>
-          </aside> */}
         </div>
       </section>
     );

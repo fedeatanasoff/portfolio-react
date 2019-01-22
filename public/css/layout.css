@@ -1114,12 +1114,12 @@ call-to-action .button {
 }
 #message-warning,
 #message-success {
-  display: none;
+  /* display: none; */
   background: #0f0f0f;
   padding: 24px 24px;
   margin-bottom: 36px;
   width: 65%;
-  margin-left: 26%;
+  margin: 0 auto;
 }
 #message-warning {
   color: #d72828;
