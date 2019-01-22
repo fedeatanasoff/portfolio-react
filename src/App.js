@@ -9,8 +9,6 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import data from "./data/data.json";
 
-const dataJson = "https://rockordie-photos.firebaseio.com/portfolio.json";
-
 class App extends Component {
   constructor(props) {
     super(props);

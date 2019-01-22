@@ -62,6 +62,6 @@
   outline: none !important;
   font: 14px/14px "opensans-bold", sans-serif;
   line-height: 24px !important;
-  width: 65% !important;
+  width: 65%;
   z-index: 1110 !important;
 }

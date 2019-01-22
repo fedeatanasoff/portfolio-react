@@ -83,8 +83,12 @@ class Portfolio extends Component {
                 </div>
 
                 <div className="link-box">
-                  {project.url != "" ? (
-                    <a href={project.url} target="_blank">
+                  {project.url !== "" ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Visitar Sitio
                     </a>
                   ) : (

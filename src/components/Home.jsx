@@ -27,6 +27,9 @@ class Home extends Component {
                     href={icono.url}
                     key={index}
                     target="_blank"
+                    rel="noopener noreferrer"
+                    // const dataJson = "https://rockordie-photos.firebaseio.com/portfolio.json";
+
                     className="social-icon"
                   >
                     <i className={icono.className} />
