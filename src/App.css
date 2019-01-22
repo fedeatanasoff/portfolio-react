@@ -74,3 +74,17 @@
   color: #cc005f;
   /* font-size: 12px; */
 }
+
+button:disabled,
+button[disabled] {
+  /* border: 1px solid #999999 !important; */
+  background-color: #fff !important;
+  color: #cc005f !important;
+  cursor: not-allowed !important;
+  /* padding-ri: 20px; */
+}
+
+.spinner-button {
+  padding-right: 29px;
+  padding-left: 29px;
+}
