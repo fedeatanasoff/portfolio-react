@@ -88,3 +88,19 @@ button[disabled] {
   padding-right: 29px;
   padding-left: 29px;
 }
+
+/* .preloader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cc005f;
+} */
+
+.preloader-span {
+  text-shadow: 2px 2px 55px #cc005f;
+}
+
+header {
+  /* height: 100vh; */
+}

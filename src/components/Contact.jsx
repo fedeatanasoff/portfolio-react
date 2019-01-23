@@ -16,33 +16,33 @@ class Contact extends Component {
   }
 
   handleForm = e => {
-    // this.setState({ respuestaForm: "", loading: true });
-    // axios
-    //   .post("https://formcarry.com/s/97jxwL-7kNn", this.state, {
-    //     headers: {
-    //       Accept: "application/json"
-    //     }
-    //   })
-    //   .then(response => {
-    //     console.log(response);
-    //     this.setState({ respuestaForm: response, loading: false });
-    //   })
-    //   .catch(error => {
-    //     console.log("error =>", error);
-    //     this.setState({ respuestaForm: error, loading: false });
-    //   });
+    this.setState({ respuestaForm: "", loading: true });
+    axios
+      .post("https://formcarry.com/s/97jxwL-7kNn", this.state, {
+        headers: {
+          Accept: "application/json"
+        }
+      })
+      .then(response => {
+        // console.log(response);
+        this.setState({ respuestaForm: response, loading: false });
+      })
+      .catch(error => {
+        // console.log("error =>", error);
+        this.setState({ respuestaForm: error, loading: false });
+      });
 
     e.preventDefault();
-    let condicion = false;
+    // let condicion = false;
 
-    this.setState({ respuestaForm: "", loading: true });
-    setTimeout(() => {
-      if (condicion) {
-        this.setState({ respuestaForm: { status: 200 }, loading: false });
-      } else {
-        this.setState({ respuestaForm: { status: 200 }, loading: false });
-      }
-    }, 2000);
+    // this.setState({ respuestaForm: "", loading: true });
+    // setTimeout(() => {
+    //   if (condicion) {
+    //     this.setState({ respuestaForm: { status: 200 }, loading: false });
+    //   } else {
+    //     this.setState({ respuestaForm: { status: 200 }, loading: false });
+    //   }
+    // }, 2000);
   };
 
   handleFields = e => {
@@ -141,11 +141,7 @@ class Contact extends Component {
                   </div>
                   {/* --- Button */}
                   <div>
-                    <button
-                      className="submit"
-                      disabled
-                      disabled={this.state.loading}
-                    >
+                    <button className="submit" disabled={this.state.loading}>
                       {this.state.loading ? (
                         <span className="spinner-button">
                           <i className="fas fa-spinner fa-spin" />

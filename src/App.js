@@ -19,6 +19,12 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+  }
+
   render() {
     console.log("desde el render =>", this.state.dataJson);
 
@@ -30,7 +36,6 @@ class App extends Component {
         <Portfolio data={this.state.dataJson.portfolio} />
         <Contact />
         <Footer data={this.state.dataJson.main.social} />
-        <Preloader />
       </div>
     );
   }
