@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav id="nav-wrap">
+      <nav id="nav-wrap" className="animated fadeIn">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>

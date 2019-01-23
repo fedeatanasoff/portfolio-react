@@ -9,9 +9,9 @@ class Home extends Component {
   render() {
     let data = this.props.data;
     return (
-      <header id="home">
+      <header id="home" className="animated fadeIn fast">
         <Navbar />
-        <div className="row banner">
+        <div className="row banner animated fadeIn">
           <div className="banner-text">
             <h1 className="responsive-headline">{data.name}</h1>
             <h3>
