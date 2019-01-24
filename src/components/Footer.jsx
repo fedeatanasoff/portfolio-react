@@ -11,7 +11,6 @@ class Footer extends Component {
   }
 
   render() {
-    console.log("footer =>", this.props.data);
     let data = this.state.social;
     return (
       <footer>
@@ -34,7 +33,7 @@ class Footer extends Component {
 
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open" />
+              <i className="fas fa-angle-up" />
             </a>
           </div>
         </div>

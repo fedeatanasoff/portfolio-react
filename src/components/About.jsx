@@ -41,11 +41,11 @@ class About extends Component {
               <div className="columns download">
                 <p>
                   <a
-                    href="Federico-Atanasoff-CV.pdf"
+                    href="cv-federico-atanasoff.pdf"
                     className="button"
-                    download="Federico-Atanasoff-CV"
+                    download="curriculum-vitae"
                   >
-                    <i className="fa fa-download" />
+                    <i className="fas fa-file-download" />
                     Descargar CV
                   </a>
                 </p>

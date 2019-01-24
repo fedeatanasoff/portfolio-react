@@ -4,7 +4,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 class Portfolio extends Component {
   render() {
     let data = this.props.data;
-    console.log("portfolio =>", data.projects);
     return (
       <ScrollAnimation animateIn="fadeIn slow">
         <section id="portfolio">
@@ -33,7 +32,7 @@ class Portfolio extends Component {
                             </div>
                           </div>
                           <div className="link-icon">
-                            <i className="icon-plus" />
+                            <i className="fas fa-search-plus" />
                           </div>
                         </a>
                       </div>
@@ -60,7 +59,7 @@ class Portfolio extends Component {
                   <div className="description-box">
                     <h4>{project.title}</h4>
                     <span className="categories">
-                      <i className="fa fa-tag" />
+                      <i className="fas fa-tags" />
                       <b className="cat-modal">{project.tags}</b>
                     </span>
                   </div>

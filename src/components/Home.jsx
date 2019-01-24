@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 
 class Home extends Component {
   render() {
+    console.log("Hola curioso :)");
+
     let data = this.props.data;
     return (
       <header id="home" className="animated fadeIn">
@@ -36,7 +38,7 @@ class Home extends Component {
 
         <p className="scrolldown">
           <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle" />
+            <i className="fas fa-angle-down" />
           </a>
         </p>
       </header>
