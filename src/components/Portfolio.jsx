@@ -6,7 +6,7 @@ class Portfolio extends Component {
     let data = this.props.data;
     console.log("portfolio =>", data.projects);
     return (
-      <ScrollAnimation animateIn="fadeIn slow" animatePreScroll="true">
+      <ScrollAnimation animateIn="fadeIn slow">
         <section id="portfolio">
           <div className="row">
             <div className="twelve columns collapsed">

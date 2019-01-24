@@ -2,14 +2,10 @@ import React, { Component } from "react";
 import Navbar from "./Navbar";
 
 class Home extends Component {
-  // componentDidMount() {
-  //   this.setState({ nombre: this.props.data });
-  // }
-
   render() {
     let data = this.props.data;
     return (
-      <header id="home" className="animated fadeIn fast">
+      <header id="home" className="animated fadeIn">
         <Navbar />
         <div className="row banner animated fadeIn">
           <div className="banner-text">
@@ -20,7 +16,7 @@ class Home extends Component {
             <hr />
           </div>
           <div className="row">
-            <div className="social">
+            <div className="social animated fadeIn">
               {data.social.map((icono, index) => {
                 return (
                   <a
@@ -28,8 +24,6 @@ class Home extends Component {
                     key={index}
                     target="_blank"
                     rel="noopener noreferrer"
-                    // const dataJson = "https://rockordie-photos.firebaseio.com/portfolio.json";
-
                     className="social-icon"
                   >
                     <i className={icono.className} />
