@@ -17,33 +17,34 @@ class Contact extends Component {
   }
 
   handleForm = e => {
-    // this.setState({ respuestaForm: "", loading: true });
-    // axios
-    //   .post("https://formcarry.com/s/97jxwL-7kNn", this.state, {
-    //     headers: {
-    //       Accept: "application/json"
-    //     }
-    //   })
-    //   .then(response => {
-    //     // console.log(response);
-    //     this.setState({ respuestaForm: response, loading: false });
-    //   })
-    //   .catch(error => {
-    //     // console.log("error =>", error);
-    //     this.setState({ respuestaForm: error, loading: false });
-    //   });
+    this.setState({ respuestaForm: "", loading: true });
+    axios
+      .post("https://formcarry.com/s/97jxwL-7kNn", this.state, {
+        headers: {
+          Accept: "application/json"
+        }
+      })
+      .then(response => {
+        this.setState({ respuestaForm: response, loading: false });
+      })
+      .catch(error => {
+        this.setState({ respuestaForm: error, loading: false });
+      });
 
     e.preventDefault();
-    let condicion = false;
 
-    this.setState({ respuestaForm: "", loading: true });
-    setTimeout(() => {
-      if (condicion) {
-        this.setState({ respuestaForm: { status: 200 }, loading: false });
-      } else {
-        this.setState({ respuestaForm: { status: 200 }, loading: false });
-      }
-    }, 2000);
+    // ---- SIMULACION DE ENVIO DE EMAIL
+
+    // let condicion = false;
+
+    // this.setState({ respuestaForm: "", loading: true });
+    // setTimeout(() => {
+    //   if (condicion) {
+    //     this.setState({ respuestaForm: { status: 200 }, loading: false });
+    //   } else {
+    //     this.setState({ respuestaForm: { status: 200 }, loading: false });
+    //   }
+    // }, 2000);
   };
 
   handleFields = e => {
@@ -53,8 +54,6 @@ class Contact extends Component {
   };
 
   render() {
-    console.log("respuesta form =>", this.state.respuestaForm);
-
     return (
       <ScrollAnimation animateIn="fadeIn">
         <section id="contact">

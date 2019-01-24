@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 class About extends Component {
   render() {
-    console.log(this.props.data);
+    // console.log(this.props.data);
     let data = this.props.data;
     return (
       <ScrollAnimation animateIn="fadeIn">
@@ -40,7 +40,11 @@ class About extends Component {
 
               <div className="columns download">
                 <p>
-                  <a href="#" className="button">
+                  <a
+                    href="Federico-Atanasoff-CV.pdf"
+                    className="button"
+                    download="Federico-Atanasoff-CV"
+                  >
                     <i className="fa fa-download" />
                     Descargar CV
                   </a>

@@ -24,8 +24,6 @@ class Footer extends Component {
                   key={index}
                   target="_blank"
                   rel="noopener noreferrer"
-                  // const dataJson = "https://rockordie-photos.firebaseio.com/portfolio.json";
-
                   className="social-icon"
                 >
                   <i className={icono.className} />
@@ -48,11 +46,6 @@ class Footer extends Component {
             </span>
             <span> Federico Atanasoff</span>
           </div>
-
-          {/* <ul className="copyright">
-            <li>&copy; Copyright {this.state.year} </li>
-            <li>Federico Atanasoff</li>
-          </ul> */}
         </div>
       </footer>
     );

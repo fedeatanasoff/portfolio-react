@@ -6,7 +6,6 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Preloader from "./components/Preloader";
 import data from "./data/data.json";
 
 class App extends Component {
@@ -19,14 +18,14 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ loading: false });
-    }, 1500);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => {
+  //     this.setState({ loading: false });
+  //   }, 1500);
+  // }
 
   render() {
-    console.log("desde el render =>", this.state.dataJson);
+    // console.log("desde el render =>", this.state.dataJson);
 
     return (
       <div className="App">
