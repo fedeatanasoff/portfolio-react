@@ -2,7 +2,7 @@
   "main": {
     "name": "Fede Atanasoff",
     "ocupacion": "Frontend",
-    "image": "fede-cv.jpg",
+    "image": "fede-cv.webp",
     "bio": "Sed ut perspiciatis unde omnis consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
     "email": "fede.atanasoff@gmail.com",
     "address": {
@@ -78,8 +78,8 @@
         "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
         "category": "Diseño Web",
         "tags": "Wordpress, PHP, Bootstrap",
-        "image": "reddo.png",
-        "url": "http://reddo.com.ar",
+        "image": "reddo.webp",
+        "url": "http://www.reddo.com.ar",
         "modal": "modal-01"
       },
       {
@@ -87,7 +87,7 @@
         "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
         "category": "Diseño Web",
         "tags": "Angular, Firebase",
-        "image": "soon.jpg",
+        "image": "soon.webp",
         "url": "",
         "modal": "modal-02"
       },
@@ -96,7 +96,7 @@
         "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
         "category": "Diseño Web",
         "tags": "Angular, API Nasa, Bulma CSS",
-        "image": "soon.jpg",
+        "image": "soon.webp",
         "url": "",
         "modal": "modal-03"
       },
@@ -105,7 +105,7 @@
         "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
         "category": "Diseño Web",
         "tags": "Node.js, Ejs, Bootstrap",
-        "image": "soon.jpg",
+        "image": "soon.webp",
         "url": "",
         "modal": "modal-04"
       }

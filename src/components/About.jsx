@@ -7,7 +7,7 @@ class About extends Component {
     let data = this.props.data;
     return (
       <ScrollAnimation animateIn="fadeIn">
-        <section id="about" className="animated flash slow">
+        <section id="about" className="animated fadeIn slow">
           <div className="row titulo-sec">
             <h2 className="h1-titulo animated flash slow">Sobre mi</h2>
           </div>
@@ -43,7 +43,7 @@ class About extends Component {
                   <a
                     href="cv-federico-atanasoff.pdf"
                     className="button"
-                    download="curriculum-vitae"
+                    download="cv-federico-atanasoff"
                   >
                     <i className="fas fa-file-download" />
                     Descargar CV

@@ -6,8 +6,8 @@ class Portfolio extends Component {
     let data = this.props.data;
     return (
       <ScrollAnimation animateIn="fadeIn slow">
-        <section id="portfolio">
-          <div className="row">
+        <section id="portfolio" className="animated fadeIn">
+          <div className="row animated fadeIn slow">
             <div className="twelve columns collapsed">
               <h1 className="h1-titulo">portfolio</h1>
 
@@ -71,12 +71,14 @@ class Portfolio extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Visitar Sitio
+                        <i className="fas fa-link fa-2x" />
                       </a>
                     ) : (
                       ""
                     )}
-                    <a className="popup-modal-dismiss">Cerrar</a>
+                    <a className="popup-modal-dismiss">
+                      <i className="fas fa-times fa-2x" />
+                    </a>
                   </div>
                 </div>
               );

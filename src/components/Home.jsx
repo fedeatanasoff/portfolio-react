@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <header id="home" className="animated fadeIn">
         <Navbar />
-        <div className="row banner animated fadeIn">
+        <div className="row banner animated fadeIn slow">
           <div className="banner-text">
             <h1 className="responsive-headline">{data.name}</h1>
             <h3>
@@ -18,7 +18,7 @@ class Home extends Component {
             <hr />
           </div>
           <div className="row">
-            <div className="social animated fadeIn">
+            <div className="social animated fadeIn slow">
               {data.social.map((icono, index) => {
                 return (
                   <a
@@ -36,7 +36,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <p className="scrolldown">
+        <p className="scrolldown animated fadeIn slow">
           <a className="smoothscroll" href="#about">
             <i className="fas fa-angle-down" />
           </a>

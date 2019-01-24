@@ -56,8 +56,8 @@ class Contact extends Component {
   render() {
     return (
       <ScrollAnimation animateIn="fadeIn">
-        <section id="contact">
-          <div className="row section-head">
+        <section id="contact" className="animated fadeIn">
+          <div className="row section-head animated fadeIn slow">
             <div className="twelve columns">
               <h1 className="h1-titulo">contacto</h1>
               <p className="">
@@ -80,7 +80,10 @@ class Contact extends Component {
                   </div>
                 </ScrollAnimation>
               ) : (
-                <form onSubmit={this.handleForm}>
+                <form
+                  onSubmit={this.handleForm}
+                  className="animated fadeIn slow"
+                >
                   <fieldset>
                     {/* --- nombre input */}
                     <div>
