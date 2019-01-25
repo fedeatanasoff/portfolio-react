@@ -3,7 +3,7 @@
     "name": "Fede Atanasoff",
     "ocupacion": "Frontend",
     "image": "fede-cv.jpg",
-    "bio": "Soy Federico ATanasoff, estudiante de la carrera Licenciatura en Sistemas en la UNGS y desarrollador web. Dedico gran parte de mi tiempo tanto a estudiar en la universidad como a seguir formandome en tecnologias web, principalmente sobre Javascript y todo su ecosistema.",
+    "bio": "Soy Federico Atanasoff, estudiante de la carrera Licenciatura en Sistemas en la UNGS y desarrollador web. Dedico gran parte de mi tiempo tanto a estudiar en la universidad como a seguir formandome en tecnologias web, principalmente sobre Javascript y todo su ecosistema.",
     "email": "fede.atanasoff@gmail.com",
     "address": {
       "city": "Moreno",
@@ -75,7 +75,7 @@
     "projects": [
       {
         "title": "Reddo Traducciones",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "description": "Diseño y personalizacion de plantilla adquirida por el cliente.",
         "category": "Diseño Web",
         "tags": "Wordpress, PHP, Bootstrap",
         "image": "reddo.png",
@@ -84,7 +84,7 @@
       },
       {
         "title": "Rockordie Photos",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "description": "",
         "category": "Diseño Web",
         "tags": "Angular, Firebase",
         "image": "soon.jpg",
@@ -93,11 +93,11 @@
       },
       {
         "title": "Astronomy Picture of The Day",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
+        "description": "Consumiendo Api de la Nasa (Astronomy picture of the Day) donde cada dia publican una nueva fotografia sobre el universo.",
         "category": "Diseño Web",
         "tags": "Angular, API Nasa, Bulma CSS",
-        "image": "soon.jpg",
-        "url": "",
+        "image": "apod.jpg",
+        "url": "https://apod.cf/",
         "modal": "modal-03"
       },
       {
