@@ -101,7 +101,7 @@
         "modal": "modal-03"
       },
       {
-        "title": "Reactcoins",
+        "title": "ReactCoins",
         "description": "Valor, cambios y cotizacion de cryptomonedas",
         "category": "SPA",
         "tags": "React, Ajax, Bootstrap, CSS",

@@ -59,7 +59,7 @@ class Portfolio extends Component {
                   <div className="description-box">
                     <h4>{project.title}</h4>
                     {project.description !== "" ? (
-                      <p>{project.description}</p>
+                      <p className="project-title">{project.description}</p>
                     ) : null}
                     <span className="categories">
                       <i className="fas fa-tags" />
