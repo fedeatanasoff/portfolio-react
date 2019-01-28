@@ -85,7 +85,7 @@
       {
         "title": "Rockordie Photos",
         "description": "",
-        "category": "Diseño Web",
+        "category": "SPA",
         "tags": "Angular, Firebase",
         "image": "soon.jpg",
         "url": "",
@@ -94,7 +94,7 @@
       {
         "title": "Astronomy Picture of The Day",
         "description": "Consumiendo Api de la Nasa (Astronomy picture of the Day) donde cada dia publican una nueva fotografia sobre el universo.",
-        "category": "Diseño Web",
+        "category": "SPA",
         "tags": "Angular, API Nasa, Bulma CSS",
         "image": "apod.jpg",
         "url": "https://apod.cf/",
