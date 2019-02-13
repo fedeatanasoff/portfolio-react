@@ -84,11 +84,11 @@
       },
       {
         "title": "Rockordie Photos",
-        "description": "",
+        "description": "Fotos rockeras!",
         "category": "SPA",
         "tags": "Angular, Firebase",
-        "image": "soon.jpg",
-        "url": "",
+        "image": "rockordie.jpg",
+        "url": "https://rockordie.netlify.com",
         "modal": "modal-02"
       },
       {
