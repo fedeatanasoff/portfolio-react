@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import ReactGA from "react-ga";
 
 class Home extends Component {
+
+  componentDidMount(){
+    ReactGA.initialize('UA-84842253-2')
+    ReactGA.pageview('/home')
+  }
+
   render() {
     console.log("Hola curioso :)");
 

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 class Portfolio extends Component {
+
   render() {
     let data = this.props.data;
     return (
