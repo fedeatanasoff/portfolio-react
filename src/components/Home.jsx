@@ -4,7 +4,7 @@ import ReactGA from "react-ga";
 
 class Home extends Component {
   componentDidMount() {
-    ReactGA.initialize("UA-135193690-1");
+    ReactGA.initialize("UA-135251461-1");
     ReactGA.pageview("/home");
   }
 
